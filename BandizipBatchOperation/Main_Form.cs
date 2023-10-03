@@ -132,19 +132,19 @@ namespace BandizipBatchOperation
         private string returntype()
         {
             string return_type = "zip";
-            if(radioButton_Type_zip.Checked == true)
+            if (radioButton_Type_zip.Checked == true)
             {
                 return_type = "zip";
             }
-            else if(radioButton_Type_rar.Checked == true)
+            else if (radioButton_Type_rar.Checked == true)
             {
                 return_type = "rar";
             }
-            else if(radioButton_Type_7z.Checked == true)
+            else if (radioButton_Type_7z.Checked == true)
             {
                 return_type = "7z";
             }
-            else if(radioButton_Type_other.Checked == true)
+            else if (radioButton_Type_other.Checked == true)
             {
                 return_type = textBox_Type.Text;
             }
@@ -162,7 +162,7 @@ namespace BandizipBatchOperation
         private bool CheckPasswordIsNull()
         {
             bool return_type = false;
-            if(textBox_Unzip_Password.Text.Length > 0)
+            if (textBox_Unzip_Password.Text.Length > 0)
             {
                 return_type = true;
             }
@@ -218,7 +218,7 @@ namespace BandizipBatchOperation
 
         private void checkBox_UnzipToSameDir_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox_UnzipToSameDir.Checked == true)
+            if (checkBox_UnzipToSameDir.Checked == true)
             {
                 textBox_UnzipToAddress.Enabled = false;
             }
@@ -226,6 +226,16 @@ namespace BandizipBatchOperation
             {
                 textBox_UnzipToAddress.Enabled = true;
             }
+        }
+
+        private void Download_Bandizip_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://cn.bandisoft.com/bandizip/");
+        }
+
+        private void linkLabel_GitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/Zj031210/BandizipBatchOperation");
         }
     }
 }

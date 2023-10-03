@@ -47,6 +47,8 @@
             checkBox_DeleteSrc = new CheckBox();
             button_StartUnzip = new Button();
             groupBox_radioButton = new GroupBox();
+            Download_Bandizip = new LinkLabel();
+            linkLabel_GitHub = new LinkLabel();
             groupBox_radioButton.SuspendLayout();
             SuspendLayout();
             // 
@@ -222,11 +224,35 @@
             groupBox_radioButton.TabStop = false;
             groupBox_radioButton.Text = "文件格式类型（文件后缀）";
             // 
+            // Download_Bandizip
+            // 
+            Download_Bandizip.AutoSize = true;
+            Download_Bandizip.Location = new Point(12, 325);
+            Download_Bandizip.Name = "Download_Bandizip";
+            Download_Bandizip.Size = new Size(100, 20);
+            Download_Bandizip.TabIndex = 19;
+            Download_Bandizip.TabStop = true;
+            Download_Bandizip.Text = "下载Bandizip";
+            Download_Bandizip.LinkClicked += Download_Bandizip_LinkClicked;
+            // 
+            // linkLabel_GitHub
+            // 
+            linkLabel_GitHub.AutoSize = true;
+            linkLabel_GitHub.Location = new Point(325, 329);
+            linkLabel_GitHub.Name = "linkLabel_GitHub";
+            linkLabel_GitHub.Size = new Size(145, 20);
+            linkLabel_GitHub.TabIndex = 20;
+            linkLabel_GitHub.TabStop = true;
+            linkLabel_GitHub.Text = "GitHub Repository";
+            linkLabel_GitHub.LinkClicked += linkLabel_GitHub_LinkClicked;
+            // 
             // Main_Form
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(482, 333);
+            ClientSize = new Size(482, 358);
+            Controls.Add(linkLabel_GitHub);
+            Controls.Add(Download_Bandizip);
             Controls.Add(groupBox_radioButton);
             Controls.Add(button_StartUnzip);
             Controls.Add(checkBox_DeleteSrc);
@@ -272,5 +298,7 @@
         private CheckBox checkBox_DeleteSrc;
         private Button button_StartUnzip;
         private GroupBox groupBox_radioButton;
+        private LinkLabel Download_Bandizip;
+        private LinkLabel linkLabel_GitHub;
     }
 }
