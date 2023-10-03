@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Resources;
 using System.Text.RegularExpressions;
 
 namespace BandizipBatchOperation
@@ -230,12 +229,12 @@ namespace BandizipBatchOperation
 
         private void Download_Bandizip_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://cn.bandisoft.com/bandizip/");
+            Process.Start("explorer.exe", "https://cn.bandisoft.com/bandizip/");
         }
 
         private void linkLabel_GitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/Zj031210/BandizipBatchOperation");
+            Process.Start("explorer.exe", "https://github.com/Zj031210/BandizipBatchOperation");
         }
     }
 }
