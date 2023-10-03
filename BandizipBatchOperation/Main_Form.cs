@@ -1,5 +1,3 @@
-using System.Reflection.Metadata;
-
 namespace BandizipBatchOperation
 {
     public partial class Main_Form : Form
@@ -39,10 +37,24 @@ namespace BandizipBatchOperation
             {
                 UnzipAddress_dialog.RootFolder = Environment.SpecialFolder.Desktop;
 
-                if(UnzipAddress_dialog.ShowDialog() == DialogResult.OK)
+                if (UnzipAddress_dialog.ShowDialog() == DialogResult.OK)
                 {
                     String Address_WaitUnzip = UnzipAddress_dialog.SelectedPath;
                     textBox_AddressWaitUnzip.Text = Address_WaitUnzip;
+                }
+            }
+        }
+
+        private void button_GetUnzipToAddress_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog UnzipToAddress_dialog = new FolderBrowserDialog())
+            {
+                UnzipToAddress_dialog.RootFolder = Environment.SpecialFolder.Desktop;
+
+                if (UnzipToAddress_dialog.ShowDialog() == DialogResult.OK)
+                {
+                    String Address_UnzipTo = UnzipToAddress_dialog.SelectedPath;
+                    textBox_UnzipToAddress.Text = Address_UnzipTo;
                 }
             }
         }

@@ -101,6 +101,7 @@
             button_GetUnzipToAddress.TabIndex = 5;
             button_GetUnzipToAddress.Text = "选取...";
             button_GetUnzipToAddress.UseVisualStyleBackColor = true;
+            button_GetUnzipToAddress.Click += button_GetUnzipToAddress_Click;
             // 
             // radioButton_Type_zip
             // 
