@@ -1,6 +1,6 @@
 ﻿namespace BandizipBatchOperation
 {
-    partial class Form1
+    partial class Main_Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // Main_Form
+            // 
+            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(482, 653);
+            Name = "Main_Form";
+            Text = "Bandizip文件批量操作";
+            ResumeLayout(false);
         }
 
         #endregion
