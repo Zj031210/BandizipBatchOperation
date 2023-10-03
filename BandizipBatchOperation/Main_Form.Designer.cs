@@ -176,6 +176,7 @@
             checkBox_UnzipToSameDir.TabIndex = 14;
             checkBox_UnzipToSameDir.Text = "解压至同一目录中";
             checkBox_UnzipToSameDir.UseVisualStyleBackColor = true;
+            checkBox_UnzipToSameDir.CheckedChanged += checkBox_UnzipToSameDir_CheckedChanged;
             // 
             // checkBox_UnzipToSameNameDir
             // 
@@ -205,6 +206,7 @@
             button_StartUnzip.TabIndex = 17;
             button_StartUnzip.Text = "开始";
             button_StartUnzip.UseVisualStyleBackColor = true;
+            button_StartUnzip.Click += button_StartUnzip_Click;
             // 
             // groupBox_radioButton
             // 
