@@ -1,3 +1,5 @@
+using System.Reflection.Metadata;
+
 namespace BandizipBatchOperation
 {
     public partial class Main_Form : Form
@@ -21,13 +23,27 @@ namespace BandizipBatchOperation
 
         private void radioButton_Type_other_CheckedChanged(object sender, EventArgs e)
         {
-            if(radioButton_Type_other.Checked == true)
+            if (radioButton_Type_other.Checked == true)
             {
                 textBox_Type.Enabled = true;
             }
             else
             {
-                textBox_Type.Enabled =false;
+                textBox_Type.Enabled = false;
+            }
+        }
+
+        private void button_GetAddressWaitUnzip_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog UnzipAddress_dialog = new FolderBrowserDialog())
+            {
+                UnzipAddress_dialog.RootFolder = Environment.SpecialFolder.Desktop;
+
+                if(UnzipAddress_dialog.ShowDialog() == DialogResult.OK)
+                {
+                    String Address_WaitUnzip = UnzipAddress_dialog.SelectedPath;
+                    textBox_AddressWaitUnzip.Text = Address_WaitUnzip;
+                }
             }
         }
     }

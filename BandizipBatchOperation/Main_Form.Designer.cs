@@ -75,6 +75,7 @@
             button_GetAddressWaitUnzip.TabIndex = 2;
             button_GetAddressWaitUnzip.Text = "选取...";
             button_GetAddressWaitUnzip.UseVisualStyleBackColor = true;
+            button_GetAddressWaitUnzip.Click += button_GetAddressWaitUnzip_Click;
             // 
             // label2
             // 
