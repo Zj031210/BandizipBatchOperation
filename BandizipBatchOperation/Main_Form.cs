@@ -20,6 +20,9 @@ namespace BandizipBatchOperation
             radioButton_Type_other.Checked = false;
 
             textBox_Type.Enabled = false;
+
+            // 设置软件版本显示
+            label_Version.Text = "V1.1.0";
         }
 
         private void radioButton_Type_other_CheckedChanged(object sender, EventArgs e)

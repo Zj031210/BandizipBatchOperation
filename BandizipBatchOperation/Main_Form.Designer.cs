@@ -49,7 +49,7 @@
             groupBox_radioButton = new GroupBox();
             Download_Bandizip = new LinkLabel();
             linkLabel_GitHub = new LinkLabel();
-            label3 = new Label();
+            label_Version = new Label();
             groupBox_radioButton.SuspendLayout();
             SuspendLayout();
             // 
@@ -247,21 +247,21 @@
             linkLabel_GitHub.Text = "GitHub Repository";
             linkLabel_GitHub.LinkClicked += linkLabel_GitHub_LinkClicked;
             // 
-            // label3
+            // label_Version
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(429, 325);
-            label3.Name = "label3";
-            label3.Size = new Size(41, 20);
-            label3.TabIndex = 21;
-            label3.Text = "V1.0";
+            label_Version.AutoSize = true;
+            label_Version.Location = new Point(419, 329);
+            label_Version.Name = "label_Version";
+            label_Version.Size = new Size(51, 20);
+            label_Version.TabIndex = 21;
+            label_Version.Text = "Vx.x.x";
             // 
             // Main_Form
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(482, 358);
-            Controls.Add(label3);
+            Controls.Add(label_Version);
             Controls.Add(linkLabel_GitHub);
             Controls.Add(Download_Bandizip);
             Controls.Add(groupBox_radioButton);
@@ -311,6 +311,6 @@
         private GroupBox groupBox_radioButton;
         private LinkLabel Download_Bandizip;
         private LinkLabel linkLabel_GitHub;
-        private Label label3;
+        private Label label_Version;
     }
 }
