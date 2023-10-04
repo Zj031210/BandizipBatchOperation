@@ -7,6 +7,9 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Bandizip.ico</ApplicationIcon>
+    <Authors>kKsk</Authors>
+    <Title>BandizipBatchOperation</Title>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
