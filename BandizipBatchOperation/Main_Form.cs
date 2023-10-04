@@ -97,7 +97,6 @@ namespace BandizipBatchOperation
             }
             // 构造cmd代码
             string command = $"Bandizip.exe x {(checkBox_DeleteSrc.Checked ? "-delsrc" : String.Empty)} -o:{(checkBox_UnzipToSameDir.Checked ? textBox_AddressWaitUnzip.Text + "\\" : textBox_UnzipToAddress.Text + "\\")} {(checkBox_UnzipToSameNameDir.Checked ? "-target:name" : String.Empty)} {(CheckPasswordIsNull() ? "-p" + textBox_Unzip_Password.Text : String.Empty)} {textBox_AddressWaitUnzip.Text + "\\*." + type}";
-            MessageBox.Show(command);
             // 推送执行
             Execute(command, 0);
         }
